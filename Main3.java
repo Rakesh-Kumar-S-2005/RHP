@@ -23,7 +23,9 @@ class Main3 {
         for(int i=0;i<5;i++)
         {
         Process p=new Process(i);
-        p.start();
+        Thread t=new Thread(p);
+            
+        t.start();
         }
     }
 }
